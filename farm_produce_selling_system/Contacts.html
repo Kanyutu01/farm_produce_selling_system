@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+        }
+        section{
+            float:left;
+            width:33%;
+            height:100px;
+        }
+        Div:not(.div2){
+            background-image:linear-gradient(to top, lawngreen, white);
+            width:100%;
+            height:50vh;
+            margin-top:70px;
+            
+        }
+        label{
+            justify-content: start;
+            flex-wrap: wrap;
+            display: flex;
+        }
+        .div2{
+            background-color: lightgrey;
+            width:100%;
+            height:50vh;
+        }
+        .div section{
+            float:left;
+            width:50%;
+
+        }
+        form{
+            border:2px solid olivedrab;
+            margin:auto;
+            border-top:transparent;
+        }
+        nav{
+            background-color: white;
+            border:2px solid lawngreen;
+            justify-content:end;
+            flex-wrap: wrap;
+            display: flex;
+            margin-bottom: 1px;
+            position:fixed;
+            width:100%;
+            top:0;
+
+        }
+        li{
+            list-style: none;
+            display:inline;
+            padding:20px;
+            color:black;
+            font-size: 20px;
+            font-weight: bold;
+            margin-top:0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <li>HOME</li>
+        <li>POST</li>
+        <li>CONTACTS</li>
+        <li>SALES</li>
+        <li>ORDERS</li>
+        <li>PROFILE</li>
+        <li>LOGOUT</li>
+    </nav>
+    <Div>
+        <section>
+            <img src="images/notebook.png" alt="">
+            <span><h2>ADDRESS</h2>
+            <h3>NAKURU</h3>
+            <h4>1st building</h4>
+            <h5>PO BOX 4598</h5>
+        </span>
+            <h3>Nairobi</h3>
+            <h4>2nd building</h4>
+            <h5>PO BOX 0923</h5>
+
+        </section>
+        <section>
+            <img src="images/gmail.png" alt="">
+            <h2>EMAIL</h2>
+            <span>
+                <h3>Business email</h3>
+            <a href="Mailto:business14@gmail.com">MAIL</a>
+            </span>
+            <span>
+<h3>General manager</h3>
+<a href="Mailto:gm01@gmail.com">Mail</a>
+            </span>
+<span>
+    <h3>CEO</h3>
+    <a href="Mailto:ceo@gmail.com">Mail</a>
+</span>
+        </section>
+        <section>
+           
+            <img src="images/customer-service.png" alt="">
+            <h2>CONTACTS</h2>
+          <span>
+            <h3>Business contact</h3>
+            <a href="Tel:0001">Call</a>
+          </span>
+          <span>
+            <h3>General manager</h3>
+            <a href="Tel:002">Call</a>
+          </span>
+          <span>
+            <h3>CEO</h3>
+            <a href="Tel:0003">Call</a>
+          </span>
+
+        </section>
+    </Div>
+    <Div class="div2">
+        <section>
+            <h2>MESSAGE US</h2>
+            <H4>We care about your opinion you can message us call us or email us any time any day</H4>
+        </section>
+        <section style="margin-left:100px">
+            <form action="">
+            <table>
+                <tr>
+                    <td>
+                    <label for="Name">NAME:</label>
+                    <input type="text" name="Name">
+                </td>
+                <td>
+                    <label for="password">Password:</label>
+                    <input type="password" name="password">
+                </td>
+                    
+                </tr>
+                <tr>
+                    <td>
+                        <label for="subject">Subject</label>
+                        <input type="text" name="subject"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="comments">Comment section</label>
+                <textarea name="comments" id="" cols="30" rows="2"></textarea>
+            </td>
+            </tr>
+            </table>
+            <button>SUBMIT</button>
+        </form>
+        </section>
+    </Div>
+</body>
+</html>

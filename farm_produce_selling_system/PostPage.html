@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color:white;
+        border:1px solid black;
+        height:100vh;
+    }
+    .wholeBody{
+        height:100vh;
+    }
+
+    .pictureHolder, .container{
+        float:left;
+        width:50%;
+        margin:0;
+        padding:0;
+        height:100vh;
+    }
+    img{
+        height:100vh;
+        
+    }
+    .container{
+        background-color:1px solid black;
+    }
+    #productName, .productPicture, .aboutPrice{
+        padding:40px;
+        margin:0;
+        border:1px solid black;
+        background-color:white;
+        
+    }
+    label{
+        justify-content:start;
+        display:flex;
+        flex-wrap:wrap;
+    }
+    button{
+        font-size:20px;
+    }
+    img{
+        width: 100%;
+    }
+    wholeBody{
+        justify-content: left;
+        width:100vh;
+    }
+
+</style>
+<body>
+    <div class="wholeBody">
+    <div class="pictureHolder">
+        <img src="images/pexels-mark-stebnicki-2255935.jpg" alt="">
+
+    </div>
+    <div class="container">
+        <form method="POST" action="postPage.php">
+        <div id="productName">
+            <span id="nameOfProduct">
+                <label for="nameOfProducts">Product Name:</label>
+                <input type="text" name="productName" required>
+            </span>
+            <span id="productDescription">
+                <label for="productDescription">Product Description:</label>
+                <textarea name="productDescription" id="description" cols="30" rows="10"></textarea>
+            </span>
+
+        </div>
+        <div class="productPicture">
+            <span id="productPicture"> 
+                <label for="productPicture">product Picture</label>
+            <input type="file"  id="product picture" name="productImage" required>    
+            </span>
+        </div>
+        <div class="aboutPrice">
+            <label for="unitPrice">Unit Price:</label>
+            <input type="text" name="unitPrice" required>
+            <label for="totalProducts">Total Products</label>
+            <input type="text" name="totalProducts" required>
+            <label for="totalPrice">Total price:</label>
+            <input type="text" name="totalPrice" required>
+        </div>
+
+        <button>Submit</button>
+        
+    </form>
+    </div>
+</div>
+</body>
+</html>
